@@ -96,7 +96,7 @@ class mykivyApp(App):
    b = random.randint(1,100)
    c = random.randint(1,100)
    self.sum -= int(self.amount.text)
-   self.Moneyamount.text = str(self.sum) + "kr"
+   self.Moneyamount.text = str(self.sum)
    if a <= 50:
     self.image1.source = self.M
     if a >= 51 and a <= 90 :
