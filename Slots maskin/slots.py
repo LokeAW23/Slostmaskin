@@ -82,8 +82,8 @@ class mykivyApp(App):
     return self.layout
 
  def connectClicker(self,btn):
-   self.sum -= int(self.amount.text)
-   self.Moneyamount.text = str(self.sum)
+   #self.sum -= int(self.amount.text)
+   #self.Moneyamount.text = str(self.sum)
    self.star = str(int(self.amount.text) * 100)
    self.gm = str(int(self.amount.text) * 10)
    self.m = str(int(self.amount.text) * 2)
@@ -95,6 +95,8 @@ class mykivyApp(App):
    a = random.randint(1,100)
    b = random.randint(1,100)
    c = random.randint(1,100)
+   self.sum -= int(self.amount.text)
+   self.Moneyamount.text = str(self.sum) + "kr"
    if a <= 50:
     self.image1.source = self.M
     if a >= 51 and a <= 90 :
